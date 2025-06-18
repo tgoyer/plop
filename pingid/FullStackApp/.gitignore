@@ -1,0 +1,8 @@
+node_modules
+/dist
+.env
+.vscode
+/bin
+/obj
+ClientApp/.env.local
+ClientApp/node_modules
