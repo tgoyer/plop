@@ -1,0 +1,538 @@
+:root {
+  /* Gray */
+  --gray-01: oklab(0.17 0 -0.008);
+  --gray-02: oklab(0.24 0 -0.011);
+  --gray-03: oklab(0.31 0 -0.014);
+  --gray-04: oklab(0.38 0 -0.017);
+  --gray-05: oklab(0.45 0 -0.02);
+  --gray-06: oklab(0.52 0 -0.023);
+  --gray-07: oklab(0.59 0 -0.019);
+  --gray-08: oklab(0.66 0 -0.015);
+  --gray-09: oklab(0.73 0 -0.011);
+  --gray-10: oklab(0.80 0 -0.008);
+  --gray-11: oklab(0.87 0 -0.005);
+  --gray-12: oklab(0.94 0 -0.002);
+
+  /* Slate */
+  --slate-01: oklab(0.17 0 0);
+  --slate-02: oklab(0.24 0 0);
+  --slate-03: oklab(0.31 0 0);
+  --slate-04: oklab(0.38 0 0);
+  --slate-05: oklab(0.45 0 0);
+  --slate-06: oklab(0.52 0 0);
+  --slate-07: oklab(0.59 0 0);
+  --slate-08: oklab(0.66 0 0);
+  --slate-09: oklab(0.73 0 0);
+  --slate-10: oklab(0.80 0 0);
+  --slate-11: oklab(0.87 0 0);
+  --slate-12: oklab(0.94 0 0);
+
+  /* Sand */
+  --sand-01: oklab(0.17 0.005 0.008);
+  --sand-02: oklab(0.24 0.007 0.011);
+  --sand-03: oklab(0.31 0.009 0.014);
+  --sand-04: oklab(0.38 0.011 0.017);
+  --sand-05: oklab(0.45 0.013 0.02);
+  --sand-06: oklab(0.52 0.015 0.023);
+  --sand-07: oklab(0.59 0.012 0.019);
+  --sand-08: oklab(0.66 0.009 0.015);
+  --sand-09: oklab(0.73 0.006 0.011);
+  --sand-10: oklab(0.80 0.004 0.008);
+  --sand-11: oklab(0.87 0.002 0.005);
+  --sand-12: oklab(0.94 0.001 0.002);
+
+  /* Sage */
+  --sage-01: oklab(0.17 -0.008 0.005);
+  --sage-02: oklab(0.24 -0.011 0.007);
+  --sage-03: oklab(0.31 -0.014 0.009);
+  --sage-04: oklab(0.38 -0.017 0.011);
+  --sage-05: oklab(0.45 -0.02 0.013);
+  --sage-06: oklab(0.52 -0.023 0.015);
+  --sage-07: oklab(0.59 -0.019 0.012);
+  --sage-08: oklab(0.66 -0.015 0.009);
+  --sage-09: oklab(0.73 -0.011 0.006);
+  --sage-10: oklab(0.80 -0.008 0.004);
+  --sage-11: oklab(0.87 -0.005 0.002);
+  --sage-12: oklab(0.94 -0.002 0.001);
+
+  /* Tomato */
+  --tomato-01: oklab(0.25 0.06 0.04);
+  --tomato-02: oklab(0.32 0.08 0.05);
+  --tomato-03: oklab(0.39 0.10 0.06);
+  --tomato-04: oklab(0.46 0.12 0.07);
+  --tomato-05: oklab(0.53 0.14 0.08);
+  --tomato-06: oklab(0.60 0.16 0.09);
+  --tomato-07: oklab(0.67 0.13 0.07);
+  --tomato-08: oklab(0.74 0.10 0.05);
+  --tomato-09: oklab(0.81 0.07 0.04);
+  --tomato-10: oklab(0.86 0.05 0.03);
+  --tomato-11: oklab(0.91 0.03 0.02);
+  --tomato-12: oklab(0.96 0.01 0.01);
+
+  /* Red */
+  --red-01: oklab(0.25 0.08 0.04);
+  --red-02: oklab(0.32 0.11 0.05);
+  --red-03: oklab(0.39 0.14 0.06);
+  --red-04: oklab(0.46 0.17 0.07);
+  --red-05: oklab(0.53 0.20 0.08);
+  --red-06: oklab(0.60 0.23 0.09);
+  --red-07: oklab(0.67 0.19 0.07);
+  --red-08: oklab(0.74 0.15 0.05);
+  --red-09: oklab(0.81 0.11 0.04);
+  --red-10: oklab(0.86 0.08 0.03);
+  --red-11: oklab(0.91 0.05 0.02);
+  --red-12: oklab(0.96 0.02 0.01);
+
+  /* Ruby */
+  --ruby-01: oklab(0.25 0.08 0.01);
+  --ruby-02: oklab(0.32 0.11 0.015);
+  --ruby-03: oklab(0.39 0.14 0.02);
+  --ruby-04: oklab(0.46 0.17 0.025);
+  --ruby-05: oklab(0.53 0.20 0.03);
+  --ruby-06: oklab(0.60 0.23 0.035);
+  --ruby-07: oklab(0.67 0.19 0.028);
+  --ruby-08: oklab(0.74 0.15 0.021);
+  --ruby-09: oklab(0.81 0.11 0.015);
+  --ruby-10: oklab(0.86 0.08 0.011);
+  --ruby-11: oklab(0.91 0.05 0.007);
+  --ruby-12: oklab(0.96 0.02 0.003);
+
+  /* Pink */
+  --pink-01: oklab(0.25 0.07 -0.01);
+  --pink-02: oklab(0.32 0.10 -0.015);
+  --pink-03: oklab(0.39 0.13 -0.02);
+  --pink-04: oklab(0.46 0.16 -0.025);
+  --pink-05: oklab(0.53 0.19 -0.03);
+  --pink-06: oklab(0.60 0.22 -0.035);
+  --pink-07: oklab(0.67 0.18 -0.028);
+  --pink-08: oklab(0.74 0.14 -0.021);
+  --pink-09: oklab(0.81 0.10 -0.015);
+  --pink-10: oklab(0.86 0.07 -0.011);
+  --pink-11: oklab(0.91 0.04 -0.007);
+  --pink-12: oklab(0.96 0.02 -0.003);
+
+  /* Purple */
+  --purple-01: oklab(0.25 0.05 -0.04);
+  --purple-02: oklab(0.32 0.07 -0.056);
+  --purple-03: oklab(0.39 0.09 -0.072);
+  --purple-04: oklab(0.46 0.11 -0.088);
+  --purple-05: oklab(0.53 0.13 -0.104);
+  --purple-06: oklab(0.60 0.15 -0.12);
+  --purple-07: oklab(0.67 0.12 -0.096);
+  --purple-08: oklab(0.74 0.09 -0.072);
+  --purple-09: oklab(0.81 0.06 -0.05);
+  --purple-10: oklab(0.86 0.04 -0.036);
+  --purple-11: oklab(0.91 0.03 -0.024);
+  --purple-12: oklab(0.96 0.01 -0.012);
+
+  /* Violet */
+  --violet-01: oklab(0.25 0.04 -0.06);
+  --violet-02: oklab(0.32 0.056 -0.084);
+  --violet-03: oklab(0.39 0.072 -0.108);
+  --violet-04: oklab(0.46 0.088 -0.132);
+  --violet-05: oklab(0.53 0.104 -0.156);
+  --violet-06: oklab(0.60 0.12 -0.18);
+  --violet-07: oklab(0.67 0.096 -0.144);
+  --violet-08: oklab(0.74 0.072 -0.108);
+  --violet-09: oklab(0.81 0.05 -0.075);
+  --violet-10: oklab(0.86 0.036 -0.054);
+  --violet-11: oklab(0.91 0.024 -0.036);
+  --violet-12: oklab(0.96 0.012 -0.018);
+
+  /* Indigo */
+  --indigo-01: oklab(0.25 0.02 -0.08);
+  --indigo-02: oklab(0.32 0.028 -0.112);
+  --indigo-03: oklab(0.39 0.036 -0.144);
+  --indigo-04: oklab(0.46 0.044 -0.176);
+  --indigo-05: oklab(0.53 0.052 -0.208);
+  --indigo-06: oklab(0.60 0.06 -0.24);
+  --indigo-07: oklab(0.67 0.048 -0.192);
+  --indigo-08: oklab(0.74 0.036 -0.144);
+  --indigo-09: oklab(0.81 0.025 -0.1);
+  --indigo-10: oklab(0.86 0.018 -0.072);
+  --indigo-11: oklab(0.91 0.012 -0.048);
+  --indigo-12: oklab(0.96 0.006 -0.024);
+
+  /* Blue */
+  --blue-01: oklab(0.25 -0.02 -0.08);
+  --blue-02: oklab(0.32 -0.028 -0.112);
+  --blue-03: oklab(0.39 -0.036 -0.144);
+  --blue-04: oklab(0.46 -0.044 -0.176);
+  --blue-05: oklab(0.53 -0.052 -0.208);
+  --blue-06: oklab(0.60 -0.06 -0.24);
+  --blue-07: oklab(0.67 -0.048 -0.192);
+  --blue-08: oklab(0.74 -0.036 -0.144);
+  --blue-09: oklab(0.81 -0.025 -0.1);
+  --blue-10: oklab(0.86 -0.018 -0.072);
+  --blue-11: oklab(0.91 -0.012 -0.048);
+  --blue-12: oklab(0.96 -0.006 -0.024);
+
+  /* Teal */
+  --teal-01: oklab(0.25 -0.08 -0.02);
+  --teal-02: oklab(0.32 -0.112 -0.028);
+  --teal-03: oklab(0.39 -0.144 -0.036);
+  --teal-04: oklab(0.46 -0.176 -0.044);
+  --teal-05: oklab(0.53 -0.208 -0.052);
+  --teal-06: oklab(0.60 -0.24 -0.06);
+  --teal-07: oklab(0.67 -0.192 -0.048);
+  --teal-08: oklab(0.74 -0.144 -0.036);
+  --teal-09: oklab(0.81 -0.1 -0.025);
+  --teal-10: oklab(0.86 -0.072 -0.018);
+  --teal-11: oklab(0.91 -0.048 -0.012);
+  --teal-12: oklab(0.96 -0.024 -0.006);
+
+  /* Green */
+  --green-01: oklab(0.20 -0.08 0.02);
+  --green-02: oklab(0.27 -0.112 0.028);
+  --green-03: oklab(0.34 -0.144 0.036);
+  --green-04: oklab(0.41 -0.176 0.044);
+  --green-05: oklab(0.48 -0.208 0.052);
+  --green-06: oklab(0.55 -0.24 0.06);
+  --green-07: oklab(0.62 -0.192 0.048);
+  --green-08: oklab(0.69 -0.144 0.036);
+  --green-09: oklab(0.76 -0.1 0.025);
+  --green-10: oklab(0.82 -0.072 0.018);
+  --green-11: oklab(0.88 -0.048 0.012);
+  --green-12: oklab(0.94 -0.024 0.006);
+
+  /* Grass */
+  --grass-01: oklab(0.325 -0.05 0.06);
+  --grass-02: oklab(0.40 -0.07 0.084);
+  --grass-03: oklab(0.475 -0.09 0.108);
+  --grass-04: oklab(0.55 -0.11 0.132);
+  --grass-05: oklab(0.625 -0.13 0.156);
+  --grass-06: oklab(0.70 -0.15 0.18);
+  --grass-07: oklab(0.755 -0.12 0.144);
+  --grass-08: oklab(0.81 -0.09 0.108);
+  --grass-09: oklab(0.855 -0.0625 0.075);
+  --grass-10: oklab(0.89 -0.045 0.054);
+  --grass-11: oklab(0.925 -0.03 0.036);
+  --grass-12: oklab(0.965 -0.015 0.018);
+  
+  /* Yellow */
+  --yellow-01: oklab(0.40 -0.02 0.12);
+  --yellow-02: oklab(0.48 -0.025 0.15);
+  --yellow-03: oklab(0.56 -0.03 0.18);
+  --yellow-04: oklab(0.64 -0.035 0.21);
+  --yellow-05: oklab(0.72 -0.04 0.24);
+  --yellow-06: oklab(0.80 -0.045 0.27);
+  --yellow-07: oklab(0.85 -0.038 0.23);
+  --yellow-08: oklab(0.88 -0.03 0.19);
+  --yellow-09: oklab(0.91 -0.022 0.15);
+  --yellow-10: oklab(0.93 -0.015 0.11);
+  --yellow-11: oklab(0.95 -0.01 0.07);
+  --yellow-12: oklab(0.97 -0.005 0.04);
+
+  /* Brown */
+  --brown-01: oklab(0.22 0.03 0.04);
+  --brown-02: oklab(0.29 0.042 0.056);
+  --brown-03: oklab(0.36 0.054 0.072);
+  --brown-04: oklab(0.43 0.066 0.088);
+  --brown-05: oklab(0.50 0.078 0.104);
+  --brown-06: oklab(0.57 0.09 0.12);
+  --brown-07: oklab(0.64 0.072 0.096);
+  --brown-08: oklab(0.71 0.054 0.072);
+  --brown-09: oklab(0.78 0.038 0.05);
+  --brown-10: oklab(0.83 0.027 0.036);
+  --brown-11: oklab(0.88 0.018 0.024);
+  --brown-12: oklab(0.94 0.009 0.012);
+
+  /* Amber */
+  --amber-01: oklab(0.32 0.02 0.07);
+  --amber-02: oklab(0.39 0.028 0.098);
+  --amber-03: oklab(0.46 0.036 0.126);
+  --amber-04: oklab(0.53 0.044 0.154);
+  --amber-05: oklab(0.60 0.052 0.182);
+  --amber-06: oklab(0.67 0.06 0.21);
+  --amber-07: oklab(0.74 0.048 0.168);
+  --amber-08: oklab(0.81 0.036 0.126);
+  --amber-09: oklab(0.86 0.025 0.088);
+  --amber-10: oklab(0.90 0.018 0.063);
+  --amber-11: oklab(0.94 0.012 0.042);
+  --amber-12: oklab(0.97 0.006 0.021);
+  
+
+  /* Orange */
+  --orange-01: oklab(0.26 0.06 0.08);
+  --orange-02: oklab(0.33 0.084 0.112);
+  --orange-03: oklab(0.40 0.108 0.144);
+  --orange-04: oklab(0.47 0.132 0.176);
+  --orange-05: oklab(0.54 0.156 0.208);
+  --orange-06: oklab(0.61 0.15 0.24);
+  --orange-07: oklab(0.68 0.144 0.192);
+  --orange-08: oklab(0.75 0.108 0.144);
+  --orange-09: oklab(0.81 0.075 0.1);
+  --orange-10: oklab(0.86 0.054 0.072);
+  --orange-11: oklab(0.91 0.036 0.048);
+  --orange-12: oklab(0.96 0.018 0.024);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Gray */
+    --gray-01: oklab(0.94 0 -0.002);
+    --gray-02: oklab(0.87 0 -0.005);
+    --gray-03: oklab(0.80 0 -0.008);
+    --gray-04: oklab(0.73 0 -0.011);
+    --gray-05: oklab(0.66 0 -0.015);
+    --gray-06: oklab(0.59 0 -0.019);
+    --gray-07: oklab(0.52 0 -0.023);
+    --gray-08: oklab(0.45 0 -0.02);
+    --gray-09: oklab(0.38 0 -0.017);
+    --gray-10: oklab(0.31 0 -0.014);
+    --gray-11: oklab(0.24 0 -0.011);
+    --gray-12: oklab(0.17 0 -0.008);
+
+    /* Slate */
+    --slate-01: oklab(0.94 0 0);
+    --slate-02: oklab(0.87 0 0);
+    --slate-03: oklab(0.80 0 0);
+    --slate-04: oklab(0.73 0 0);
+    --slate-05: oklab(0.66 0 0);
+    --slate-06: oklab(0.59 0 0);
+    --slate-07: oklab(0.52 0 0);
+    --slate-08: oklab(0.45 0 0);
+    --slate-09: oklab(0.38 0 0);
+    --slate-10: oklab(0.31 0 0);
+    --slate-11: oklab(0.24 0 0);
+    --slate-12: oklab(0.17 0 0);
+
+    /* Sand */
+    --sand-01: oklab(0.94 0.001 0.002);
+    --sand-02: oklab(0.87 0.002 0.005);
+    --sand-03: oklab(0.80 0.004 0.008);
+    --sand-04: oklab(0.73 0.006 0.011);
+    --sand-05: oklab(0.66 0.009 0.015);
+    --sand-06: oklab(0.59 0.012 0.019);
+    --sand-07: oklab(0.52 0.015 0.023);
+    --sand-08: oklab(0.45 0.013 0.02);
+    --sand-09: oklab(0.38 0.011 0.017);
+    --sand-10: oklab(0.31 0.009 0.014);
+    --sand-11: oklab(0.24 0.007 0.011);
+    --sand-12: oklab(0.17 0.005 0.008);
+
+    /* Sage */
+    --sage-01: oklab(0.94 -0.002 0.001);
+    --sage-02: oklab(0.87 -0.005 0.002);
+    --sage-03: oklab(0.80 -0.008 0.004);
+    --sage-04: oklab(0.73 -0.011 0.006);
+    --sage-05: oklab(0.66 -0.015 0.009);
+    --sage-06: oklab(0.59 -0.019 0.012);
+    --sage-07: oklab(0.52 -0.023 0.015);
+    --sage-08: oklab(0.45 -0.02 0.013);
+    --sage-09: oklab(0.38 -0.017 0.011);
+    --sage-10: oklab(0.31 -0.014 0.009);
+    --sage-11: oklab(0.24 -0.011 0.007);
+    --sage-12: oklab(0.17 -0.008 0.005);
+
+    /* Tomato */
+    --tomato-01: oklab(0.96 0.01 0.01);
+    --tomato-02: oklab(0.91 0.03 0.02);
+    --tomato-03: oklab(0.86 0.05 0.03);
+    --tomato-04: oklab(0.81 0.07 0.04);
+    --tomato-05: oklab(0.74 0.10 0.05);
+    --tomato-06: oklab(0.67 0.13 0.07);
+    --tomato-07: oklab(0.60 0.16 0.09);
+    --tomato-08: oklab(0.53 0.14 0.08);
+    --tomato-09: oklab(0.46 0.12 0.07);
+    --tomato-10: oklab(0.39 0.10 0.06);
+    --tomato-11: oklab(0.32 0.08 0.05);
+    --tomato-12: oklab(0.25 0.06 0.04);
+
+    /* Red */
+    --red-01: oklab(0.96 0.02 0.01);
+    --red-02: oklab(0.91 0.05 0.02);
+    --red-03: oklab(0.86 0.08 0.03);
+    --red-04: oklab(0.81 0.11 0.04);
+    --red-05: oklab(0.74 0.15 0.05);
+    --red-06: oklab(0.67 0.19 0.07);
+    --red-07: oklab(0.60 0.23 0.09);
+    --red-08: oklab(0.53 0.20 0.08);
+    --red-09: oklab(0.46 0.17 0.07);
+    --red-10: oklab(0.39 0.14 0.06);
+    --red-11: oklab(0.32 0.11 0.05);
+    --red-12: oklab(0.25 0.08 0.04);
+
+    /* Ruby */
+    --ruby-01: oklab(0.96 0.02 0.003);
+    --ruby-02: oklab(0.91 0.05 0.007);
+    --ruby-03: oklab(0.86 0.08 0.011);
+    --ruby-04: oklab(0.81 0.11 0.015);
+    --ruby-05: oklab(0.74 0.15 0.021);
+    --ruby-06: oklab(0.67 0.19 0.028);
+    --ruby-07: oklab(0.60 0.23 0.035);
+    --ruby-08: oklab(0.53 0.20 0.03);
+    --ruby-09: oklab(0.46 0.17 0.025);
+    --ruby-10: oklab(0.39 0.14 0.02);
+    --ruby-11: oklab(0.32 0.11 0.015);
+    --ruby-12: oklab(0.25 0.08 0.01);
+
+    /* Pink */
+    --pink-01: oklab(0.96 0.02 -0.003);
+    --pink-02: oklab(0.91 0.04 -0.007);
+    --pink-03: oklab(0.86 0.07 -0.011);
+    --pink-04: oklab(0.81 0.10 -0.015);
+    --pink-05: oklab(0.74 0.14 -0.021);
+    --pink-06: oklab(0.67 0.18 -0.028);
+    --pink-07: oklab(0.60 0.22 -0.035);
+    --pink-08: oklab(0.53 0.19 -0.03);
+    --pink-09: oklab(0.46 0.16 -0.025);
+    --pink-10: oklab(0.39 0.13 -0.02);
+    --pink-11: oklab(0.32 0.10 -0.015);
+    --pink-12: oklab(0.25 0.07 -0.01);
+
+    /* Purple */
+    --purple-01: oklab(0.96 0.01 -0.012);
+    --purple-02: oklab(0.91 0.03 -0.024);
+    --purple-03: oklab(0.86 0.04 -0.036);
+    --purple-04: oklab(0.81 0.06 -0.05);
+    --purple-05: oklab(0.74 0.09 -0.072);
+    --purple-06: oklab(0.67 0.12 -0.096);
+    --purple-07: oklab(0.60 0.15 -0.12);
+    --purple-08: oklab(0.53 0.13 -0.104);
+    --purple-09: oklab(0.46 0.11 -0.088);
+    --purple-10: oklab(0.39 0.09 -0.072);
+    --purple-11: oklab(0.32 0.07 -0.056);
+    --purple-12: oklab(0.25 0.05 -0.04);
+
+    /* Violet */
+    --violet-01: oklab(0.96 0.012 -0.018);
+    --violet-02: oklab(0.91 0.024 -0.036);
+    --violet-03: oklab(0.86 0.036 -0.054);
+    --violet-04: oklab(0.81 0.05 -0.075);
+    --violet-05: oklab(0.74 0.072 -0.108);
+    --violet-06: oklab(0.67 0.096 -0.144);
+    --violet-07: oklab(0.60 0.12 -0.18);
+    --violet-08: oklab(0.53 0.104 -0.156);
+    --violet-09: oklab(0.46 0.088 -0.132);
+    --violet-10: oklab(0.39 0.072 -0.108);
+    --violet-11: oklab(0.32 0.056 -0.084);
+    --violet-12: oklab(0.25 0.04 -0.06);
+
+    /* Indigo */
+    --indigo-01: oklab(0.96 0.006 -0.024);
+    --indigo-02: oklab(0.91 0.012 -0.048);
+    --indigo-03: oklab(0.86 0.018 -0.072);
+    --indigo-04: oklab(0.81 0.025 -0.1);
+    --indigo-05: oklab(0.74 0.036 -0.144);
+    --indigo-06: oklab(0.67 0.048 -0.192);
+    --indigo-07: oklab(0.60 0.06 -0.24);
+    --indigo-08: oklab(0.53 0.052 -0.208);
+    --indigo-09: oklab(0.46 0.044 -0.176);
+    --indigo-10: oklab(0.39 0.036 -0.144);
+    --indigo-11: oklab(0.32 0.028 -0.112);
+    --indigo-12: oklab(0.25 0.02 -0.08);
+
+    /* Blue */
+    --blue-01: oklab(0.96 -0.006 -0.024);
+    --blue-02: oklab(0.91 -0.012 -0.048);
+    --blue-03: oklab(0.86 -0.018 -0.072);
+    --blue-04: oklab(0.81 -0.025 -0.1);
+    --blue-05: oklab(0.74 -0.036 -0.144);
+    --blue-06: oklab(0.67 -0.048 -0.192);
+    --blue-07: oklab(0.60 -0.06 -0.24);
+    --blue-08: oklab(0.53 -0.052 -0.208);
+    --blue-09: oklab(0.46 -0.044 -0.176);
+    --blue-10: oklab(0.39 -0.036 -0.144);
+    --blue-11: oklab(0.32 -0.028 -0.112);
+    --blue-12: oklab(0.25 -0.02 -0.08);
+
+    /* Teal */
+    --teal-01: oklab(0.96 -0.024 -0.006);
+    --teal-02: oklab(0.91 -0.048 -0.012);
+    --teal-03: oklab(0.86 -0.072 -0.018);
+    --teal-04: oklab(0.81 -0.1 -0.025);
+    --teal-05: oklab(0.74 -0.144 -0.036);
+    --teal-06: oklab(0.67 -0.192 -0.048);
+    --teal-07: oklab(0.60 -0.24 -0.06);
+    --teal-08: oklab(0.53 -0.208 -0.052);
+    --teal-09: oklab(0.46 -0.176 -0.044);
+    --teal-10: oklab(0.39 -0.144 -0.036);
+    --teal-11: oklab(0.32 -0.112 -0.028);
+    --teal-12: oklab(0.25 -0.08 -0.02);
+
+    /* Green */
+    --green-01: oklab(0.94 -0.024 0.006);
+    --green-02: oklab(0.88 -0.048 0.012);
+    --green-03: oklab(0.82 -0.072 0.018);
+    --green-04: oklab(0.76 -0.1 0.025);
+    --green-05: oklab(0.69 -0.144 0.036);
+    --green-06: oklab(0.62 -0.192 0.048);
+    --green-07: oklab(0.55 -0.24 0.06);
+    --green-08: oklab(0.48 -0.208 0.052);
+    --green-09: oklab(0.41 -0.176 0.044);
+    --green-10: oklab(0.34 -0.144 0.036);
+    --green-11: oklab(0.27 -0.112 0.028);
+    --green-12: oklab(0.20 -0.08 0.02);
+
+    /* Grass */
+    --grass-01: oklab(0.965 -0.015 0.018);
+    --grass-02: oklab(0.925 -0.03 0.036);
+    --grass-03: oklab(0.89 -0.045 0.054);
+    --grass-04: oklab(0.855 -0.0625 0.075);
+    --grass-05: oklab(0.81 -0.09 0.108);
+    --grass-06: oklab(0.755 -0.12 0.144);
+    --grass-07: oklab(0.70 -0.15 0.18);
+    --grass-08: oklab(0.625 -0.13 0.156);
+    --grass-09: oklab(0.55 -0.11 0.132);
+    --grass-10: oklab(0.475 -0.09 0.108);
+    --grass-11: oklab(0.40 -0.07 0.084);
+    --grass-12: oklab(0.325 -0.05 0.06);
+    
+    /* Yellow */
+    --yellow-01: oklab(0.97 -0.005 0.04);
+    --yellow-02: oklab(0.95 -0.01 0.07);
+    --yellow-03: oklab(0.93 -0.015 0.11);
+    --yellow-04: oklab(0.91 -0.022 0.15);
+    --yellow-05: oklab(0.88 -0.03 0.19);
+    --yellow-06: oklab(0.85 -0.038 0.23);
+    --yellow-07: oklab(0.80 -0.045 0.27);
+    --yellow-08: oklab(0.72 -0.04 0.24);
+    --yellow-09: oklab(0.64 -0.035 0.21);
+    --yellow-10: oklab(0.56 -0.03 0.18);
+    --yellow-11: oklab(0.48 -0.025 0.15);
+    --yellow-12: oklab(0.40 -0.02 0.12);
+
+    /* Brown */
+    --brown-01: oklab(0.94 0.009 0.012);
+    --brown-02: oklab(0.88 0.018 0.024);
+    --brown-03: oklab(0.83 0.027 0.036);
+    --brown-04: oklab(0.78 0.038 0.05);
+    --brown-05: oklab(0.71 0.054 0.072);
+    --brown-06: oklab(0.64 0.072 0.096);
+    --brown-07: oklab(0.57 0.09 0.12);
+    --brown-08: oklab(0.50 0.078 0.104);
+    --brown-09: oklab(0.43 0.066 0.088);
+    --brown-10: oklab(0.36 0.054 0.072);
+    --brown-11: oklab(0.29 0.042 0.056);
+    --brown-12: oklab(0.22 0.03 0.04);
+
+    /* Amber */
+    --amber-01: oklab(0.97 0.006 0.021);
+    --amber-02: oklab(0.94 0.012 0.042);
+    --amber-03: oklab(0.90 0.018 0.063);
+    --amber-04: oklab(0.86 0.025 0.088);
+    --amber-05: oklab(0.81 0.036 0.126);
+    --amber-06: oklab(0.74 0.048 0.168);
+    --amber-07: oklab(0.67 0.06 0.21);
+    --amber-08: oklab(0.60 0.052 0.182);
+    --amber-09: oklab(0.53 0.044 0.154);
+    --amber-10: oklab(0.46 0.036 0.126);
+    --amber-11: oklab(0.39 0.028 0.098);
+    --amber-12: oklab(0.32 0.02 0.07);
+
+    /* Orange */
+    --orange-01: oklab(0.96 0.018 0.024);
+    --orange-02: oklab(0.91 0.036 0.048);
+    --orange-03: oklab(0.86 0.054 0.072);
+    --orange-04: oklab(0.81 0.075 0.1);
+    --orange-05: oklab(0.75 0.108 0.144);
+    --orange-06: oklab(0.68 0.144 0.192);
+    --orange-07: oklab(0.61 0.15 0.24);
+    --orange-08: oklab(0.54 0.156 0.208);
+    --orange-09: oklab(0.47 0.132 0.176);
+    --orange-10: oklab(0.40 0.108 0.144);
+    --orange-11: oklab(0.33 0.084 0.112);
+    --orange-12: oklab(0.26 0.06 0.08);
+  }
+}

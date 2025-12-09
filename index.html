@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OKLAB Color Scale Demo</title>
+  <link rel="stylesheet" href="./colors.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 40px;
+      background: white;
+      color: black;
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: black;
+        color: white;
+      }
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    .color-group {
+      margin-bottom: 30px;
+    }
+
+    .color-name {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+
+    .color-row {
+      display: flex;
+      gap: 2px;
+    }
+
+    .color-square {
+      width: 50px;
+      height: 50px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>OKLAB Color Scale Demo</h1>
+
+  <div class="color-group">
+    <div class="color-name">Gray</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--gray-01)"></div>
+      <div class="color-square" style="background-color: var(--gray-02)"></div>
+      <div class="color-square" style="background-color: var(--gray-03)"></div>
+      <div class="color-square" style="background-color: var(--gray-04)"></div>
+      <div class="color-square" style="background-color: var(--gray-05)"></div>
+      <div class="color-square" style="background-color: var(--gray-06)"></div>
+      <div class="color-square" style="background-color: var(--gray-07)"></div>
+      <div class="color-square" style="background-color: var(--gray-08)"></div>
+      <div class="color-square" style="background-color: var(--gray-09)"></div>
+      <div class="color-square" style="background-color: var(--gray-10)"></div>
+      <div class="color-square" style="background-color: var(--gray-11)"></div>
+      <div class="color-square" style="background-color: var(--gray-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Slate</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--slate-01)"></div>
+      <div class="color-square" style="background-color: var(--slate-02)"></div>
+      <div class="color-square" style="background-color: var(--slate-03)"></div>
+      <div class="color-square" style="background-color: var(--slate-04)"></div>
+      <div class="color-square" style="background-color: var(--slate-05)"></div>
+      <div class="color-square" style="background-color: var(--slate-06)"></div>
+      <div class="color-square" style="background-color: var(--slate-07)"></div>
+      <div class="color-square" style="background-color: var(--slate-08)"></div>
+      <div class="color-square" style="background-color: var(--slate-09)"></div>
+      <div class="color-square" style="background-color: var(--slate-10)"></div>
+      <div class="color-square" style="background-color: var(--slate-11)"></div>
+      <div class="color-square" style="background-color: var(--slate-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Sand</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--sand-01)"></div>
+      <div class="color-square" style="background-color: var(--sand-02)"></div>
+      <div class="color-square" style="background-color: var(--sand-03)"></div>
+      <div class="color-square" style="background-color: var(--sand-04)"></div>
+      <div class="color-square" style="background-color: var(--sand-05)"></div>
+      <div class="color-square" style="background-color: var(--sand-06)"></div>
+      <div class="color-square" style="background-color: var(--sand-07)"></div>
+      <div class="color-square" style="background-color: var(--sand-08)"></div>
+      <div class="color-square" style="background-color: var(--sand-09)"></div>
+      <div class="color-square" style="background-color: var(--sand-10)"></div>
+      <div class="color-square" style="background-color: var(--sand-11)"></div>
+      <div class="color-square" style="background-color: var(--sand-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Sage</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--sage-01)"></div>
+      <div class="color-square" style="background-color: var(--sage-02)"></div>
+      <div class="color-square" style="background-color: var(--sage-03)"></div>
+      <div class="color-square" style="background-color: var(--sage-04)"></div>
+      <div class="color-square" style="background-color: var(--sage-05)"></div>
+      <div class="color-square" style="background-color: var(--sage-06)"></div>
+      <div class="color-square" style="background-color: var(--sage-07)"></div>
+      <div class="color-square" style="background-color: var(--sage-08)"></div>
+      <div class="color-square" style="background-color: var(--sage-09)"></div>
+      <div class="color-square" style="background-color: var(--sage-10)"></div>
+      <div class="color-square" style="background-color: var(--sage-11)"></div>
+      <div class="color-square" style="background-color: var(--sage-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Tomato</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--tomato-01)"></div>
+      <div class="color-square" style="background-color: var(--tomato-02)"></div>
+      <div class="color-square" style="background-color: var(--tomato-03)"></div>
+      <div class="color-square" style="background-color: var(--tomato-04)"></div>
+      <div class="color-square" style="background-color: var(--tomato-05)"></div>
+      <div class="color-square" style="background-color: var(--tomato-06)"></div>
+      <div class="color-square" style="background-color: var(--tomato-07)"></div>
+      <div class="color-square" style="background-color: var(--tomato-08)"></div>
+      <div class="color-square" style="background-color: var(--tomato-09)"></div>
+      <div class="color-square" style="background-color: var(--tomato-10)"></div>
+      <div class="color-square" style="background-color: var(--tomato-11)"></div>
+      <div class="color-square" style="background-color: var(--tomato-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Red</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--red-01)"></div>
+      <div class="color-square" style="background-color: var(--red-02)"></div>
+      <div class="color-square" style="background-color: var(--red-03)"></div>
+      <div class="color-square" style="background-color: var(--red-04)"></div>
+      <div class="color-square" style="background-color: var(--red-05)"></div>
+      <div class="color-square" style="background-color: var(--red-06)"></div>
+      <div class="color-square" style="background-color: var(--red-07)"></div>
+      <div class="color-square" style="background-color: var(--red-08)"></div>
+      <div class="color-square" style="background-color: var(--red-09)"></div>
+      <div class="color-square" style="background-color: var(--red-10)"></div>
+      <div class="color-square" style="background-color: var(--red-11)"></div>
+      <div class="color-square" style="background-color: var(--red-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Ruby</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--ruby-01)"></div>
+      <div class="color-square" style="background-color: var(--ruby-02)"></div>
+      <div class="color-square" style="background-color: var(--ruby-03)"></div>
+      <div class="color-square" style="background-color: var(--ruby-04)"></div>
+      <div class="color-square" style="background-color: var(--ruby-05)"></div>
+      <div class="color-square" style="background-color: var(--ruby-06)"></div>
+      <div class="color-square" style="background-color: var(--ruby-07)"></div>
+      <div class="color-square" style="background-color: var(--ruby-08)"></div>
+      <div class="color-square" style="background-color: var(--ruby-09)"></div>
+      <div class="color-square" style="background-color: var(--ruby-10)"></div>
+      <div class="color-square" style="background-color: var(--ruby-11)"></div>
+      <div class="color-square" style="background-color: var(--ruby-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Pink</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--pink-01)"></div>
+      <div class="color-square" style="background-color: var(--pink-02)"></div>
+      <div class="color-square" style="background-color: var(--pink-03)"></div>
+      <div class="color-square" style="background-color: var(--pink-04)"></div>
+      <div class="color-square" style="background-color: var(--pink-05)"></div>
+      <div class="color-square" style="background-color: var(--pink-06)"></div>
+      <div class="color-square" style="background-color: var(--pink-07)"></div>
+      <div class="color-square" style="background-color: var(--pink-08)"></div>
+      <div class="color-square" style="background-color: var(--pink-09)"></div>
+      <div class="color-square" style="background-color: var(--pink-10)"></div>
+      <div class="color-square" style="background-color: var(--pink-11)"></div>
+      <div class="color-square" style="background-color: var(--pink-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Purple</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--purple-01)"></div>
+      <div class="color-square" style="background-color: var(--purple-02)"></div>
+      <div class="color-square" style="background-color: var(--purple-03)"></div>
+      <div class="color-square" style="background-color: var(--purple-04)"></div>
+      <div class="color-square" style="background-color: var(--purple-05)"></div>
+      <div class="color-square" style="background-color: var(--purple-06)"></div>
+      <div class="color-square" style="background-color: var(--purple-07)"></div>
+      <div class="color-square" style="background-color: var(--purple-08)"></div>
+      <div class="color-square" style="background-color: var(--purple-09)"></div>
+      <div class="color-square" style="background-color: var(--purple-10)"></div>
+      <div class="color-square" style="background-color: var(--purple-11)"></div>
+      <div class="color-square" style="background-color: var(--purple-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Violet</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--violet-01)"></div>
+      <div class="color-square" style="background-color: var(--violet-02)"></div>
+      <div class="color-square" style="background-color: var(--violet-03)"></div>
+      <div class="color-square" style="background-color: var(--violet-04)"></div>
+      <div class="color-square" style="background-color: var(--violet-05)"></div>
+      <div class="color-square" style="background-color: var(--violet-06)"></div>
+      <div class="color-square" style="background-color: var(--violet-07)"></div>
+      <div class="color-square" style="background-color: var(--violet-08)"></div>
+      <div class="color-square" style="background-color: var(--violet-09)"></div>
+      <div class="color-square" style="background-color: var(--violet-10)"></div>
+      <div class="color-square" style="background-color: var(--violet-11)"></div>
+      <div class="color-square" style="background-color: var(--violet-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Indigo</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--indigo-01)"></div>
+      <div class="color-square" style="background-color: var(--indigo-02)"></div>
+      <div class="color-square" style="background-color: var(--indigo-03)"></div>
+      <div class="color-square" style="background-color: var(--indigo-04)"></div>
+      <div class="color-square" style="background-color: var(--indigo-05)"></div>
+      <div class="color-square" style="background-color: var(--indigo-06)"></div>
+      <div class="color-square" style="background-color: var(--indigo-07)"></div>
+      <div class="color-square" style="background-color: var(--indigo-08)"></div>
+      <div class="color-square" style="background-color: var(--indigo-09)"></div>
+      <div class="color-square" style="background-color: var(--indigo-10)"></div>
+      <div class="color-square" style="background-color: var(--indigo-11)"></div>
+      <div class="color-square" style="background-color: var(--indigo-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Blue</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--blue-01)"></div>
+      <div class="color-square" style="background-color: var(--blue-02)"></div>
+      <div class="color-square" style="background-color: var(--blue-03)"></div>
+      <div class="color-square" style="background-color: var(--blue-04)"></div>
+      <div class="color-square" style="background-color: var(--blue-05)"></div>
+      <div class="color-square" style="background-color: var(--blue-06)"></div>
+      <div class="color-square" style="background-color: var(--blue-07)"></div>
+      <div class="color-square" style="background-color: var(--blue-08)"></div>
+      <div class="color-square" style="background-color: var(--blue-09)"></div>
+      <div class="color-square" style="background-color: var(--blue-10)"></div>
+      <div class="color-square" style="background-color: var(--blue-11)"></div>
+      <div class="color-square" style="background-color: var(--blue-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Teal</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--teal-01)"></div>
+      <div class="color-square" style="background-color: var(--teal-02)"></div>
+      <div class="color-square" style="background-color: var(--teal-03)"></div>
+      <div class="color-square" style="background-color: var(--teal-04)"></div>
+      <div class="color-square" style="background-color: var(--teal-05)"></div>
+      <div class="color-square" style="background-color: var(--teal-06)"></div>
+      <div class="color-square" style="background-color: var(--teal-07)"></div>
+      <div class="color-square" style="background-color: var(--teal-08)"></div>
+      <div class="color-square" style="background-color: var(--teal-09)"></div>
+      <div class="color-square" style="background-color: var(--teal-10)"></div>
+      <div class="color-square" style="background-color: var(--teal-11)"></div>
+      <div class="color-square" style="background-color: var(--teal-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Green</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--green-01)"></div>
+      <div class="color-square" style="background-color: var(--green-02)"></div>
+      <div class="color-square" style="background-color: var(--green-03)"></div>
+      <div class="color-square" style="background-color: var(--green-04)"></div>
+      <div class="color-square" style="background-color: var(--green-05)"></div>
+      <div class="color-square" style="background-color: var(--green-06)"></div>
+      <div class="color-square" style="background-color: var(--green-07)"></div>
+      <div class="color-square" style="background-color: var(--green-08)"></div>
+      <div class="color-square" style="background-color: var(--green-09)"></div>
+      <div class="color-square" style="background-color: var(--green-10)"></div>
+      <div class="color-square" style="background-color: var(--green-11)"></div>
+      <div class="color-square" style="background-color: var(--green-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Grass</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--grass-01)"></div>
+      <div class="color-square" style="background-color: var(--grass-02)"></div>
+      <div class="color-square" style="background-color: var(--grass-03)"></div>
+      <div class="color-square" style="background-color: var(--grass-04)"></div>
+      <div class="color-square" style="background-color: var(--grass-05)"></div>
+      <div class="color-square" style="background-color: var(--grass-06)"></div>
+      <div class="color-square" style="background-color: var(--grass-07)"></div>
+      <div class="color-square" style="background-color: var(--grass-08)"></div>
+      <div class="color-square" style="background-color: var(--grass-09)"></div>
+      <div class="color-square" style="background-color: var(--grass-10)"></div>
+      <div class="color-square" style="background-color: var(--grass-11)"></div>
+      <div class="color-square" style="background-color: var(--grass-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Yellow</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--yellow-01)"></div>
+      <div class="color-square" style="background-color: var(--yellow-02)"></div>
+      <div class="color-square" style="background-color: var(--yellow-03)"></div>
+      <div class="color-square" style="background-color: var(--yellow-04)"></div>
+      <div class="color-square" style="background-color: var(--yellow-05)"></div>
+      <div class="color-square" style="background-color: var(--yellow-06)"></div>
+      <div class="color-square" style="background-color: var(--yellow-07)"></div>
+      <div class="color-square" style="background-color: var(--yellow-08)"></div>
+      <div class="color-square" style="background-color: var(--yellow-09)"></div>
+      <div class="color-square" style="background-color: var(--yellow-10)"></div>
+      <div class="color-square" style="background-color: var(--yellow-11)"></div>
+      <div class="color-square" style="background-color: var(--yellow-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Amber</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--amber-01)"></div>
+      <div class="color-square" style="background-color: var(--amber-02)"></div>
+      <div class="color-square" style="background-color: var(--amber-03)"></div>
+      <div class="color-square" style="background-color: var(--amber-04)"></div>
+      <div class="color-square" style="background-color: var(--amber-05)"></div>
+      <div class="color-square" style="background-color: var(--amber-06)"></div>
+      <div class="color-square" style="background-color: var(--amber-07)"></div>
+      <div class="color-square" style="background-color: var(--amber-08)"></div>
+      <div class="color-square" style="background-color: var(--amber-09)"></div>
+      <div class="color-square" style="background-color: var(--amber-10)"></div>
+      <div class="color-square" style="background-color: var(--amber-11)"></div>
+      <div class="color-square" style="background-color: var(--amber-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Orange</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--orange-01)"></div>
+      <div class="color-square" style="background-color: var(--orange-02)"></div>
+      <div class="color-square" style="background-color: var(--orange-03)"></div>
+      <div class="color-square" style="background-color: var(--orange-04)"></div>
+      <div class="color-square" style="background-color: var(--orange-05)"></div>
+      <div class="color-square" style="background-color: var(--orange-06)"></div>
+      <div class="color-square" style="background-color: var(--orange-07)"></div>
+      <div class="color-square" style="background-color: var(--orange-08)"></div>
+      <div class="color-square" style="background-color: var(--orange-09)"></div>
+      <div class="color-square" style="background-color: var(--orange-10)"></div>
+      <div class="color-square" style="background-color: var(--orange-11)"></div>
+      <div class="color-square" style="background-color: var(--orange-12)"></div>
+    </div>
+  </div>
+
+  <div class="color-group">
+    <div class="color-name">Brown</div>
+    <div class="color-row">
+      <div class="color-square" style="background-color: var(--brown-01)"></div>
+      <div class="color-square" style="background-color: var(--brown-02)"></div>
+      <div class="color-square" style="background-color: var(--brown-03)"></div>
+      <div class="color-square" style="background-color: var(--brown-04)"></div>
+      <div class="color-square" style="background-color: var(--brown-05)"></div>
+      <div class="color-square" style="background-color: var(--brown-06)"></div>
+      <div class="color-square" style="background-color: var(--brown-07)"></div>
+      <div class="color-square" style="background-color: var(--brown-08)"></div>
+      <div class="color-square" style="background-color: var(--brown-09)"></div>
+      <div class="color-square" style="background-color: var(--brown-10)"></div>
+      <div class="color-square" style="background-color: var(--brown-11)"></div>
+      <div class="color-square" style="background-color: var(--brown-12)"></div>
+    </div>
+  </div>
+
+</body>
+</html>
